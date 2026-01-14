@@ -686,9 +686,25 @@ function setupEventListeners() {
     });
 
     adminBtn.addEventListener('click', () => {
-        adminPanel.classList.toggle('active');
-        if (adminPanel.classList.contains('active')) {
-            loadAdminData();
+        // Check if already authenticated
+        const isAuthenticated = sessionStorage.getItem('adminAuth') === 'true';
+
+        if (!isAuthenticated) {
+            const password = prompt('🔒 Admin panelga kirish uchun parolni kiriting:');
+
+            // Admin password: chihota-6yastvie-9smaz
+            if (password === 'chihota-6yastvie-9smaz') {
+                sessionStorage.setItem('adminAuth', 'true');
+                adminPanel.classList.add('active');
+                loadAdminData();
+            } else if (password !== null) {
+                alert('❌ Noto\'g\'ri parol! Kirish rad etildi.');
+            }
+        } else {
+            adminPanel.classList.toggle('active');
+            if (adminPanel.classList.contains('active')) {
+                loadAdminData();
+            }
         }
     });
 
