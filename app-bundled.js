@@ -1,5 +1,9 @@
-// ==================== EXAM QUESTIONS DATA ====================
-// Exam topics
+// Bundled JavaScript for Yakuniy Imtixon
+// Generated automatically
+
+
+// ===== questions.js =====
+// Exam questions database for all 7 topics
 const examTopics = [
     {
         id: 'kassa-bank',
@@ -52,210 +56,1204 @@ const examTopics = [
     }
 ];
 
-// Questions database - simplified version with 10 questions per topic
 const questions = {
+    // ==================== KASSA VA BANK ====================
     'kassa-bank': {
         test: [
-            { id: 1, question: 'Kassada naqd pulning maksimal qoldig\'i qancha bo\'lishi mumkin?', options: ['Cheklanmagan', 'Bank tomonidan belgilangan limit', '5 million so\'m', '10 million so\'m'], points: 1 },
-            { id: 2, question: 'Kassa kitobini kim yuritadi?', options: ['Bosh hisobchi', 'Kassir', 'Direktor', 'Nazoratchi'], points: 1 },
-            { id: 3, question: 'Kassadan pul chiqimini qaysi hujjat bilan rasmiylashtiriladi?', options: ['Kirim orderi', 'Chiqim orderi', 'Avans hisoboti', 'Faktura'], points: 1 },
-            { id: 4, question: 'Bank hisobvarag\'i qaysi hisob raqamida yuritiladi?', options: ['5010', '5110', '5210', '5310'], points: 1 },
-            { id: 5, question: 'Kassaga naqd pul qabul qilinganda qaysi hujjat tuziladi?', options: ['Chiqim orderi', 'Kirim orderi', 'Kassa kitobchasi', 'Avans hisoboti'], points: 1 },
-            { id: 6, question: 'Bankka naqd pul topshirilganda qaysi provodka tuziladi?', options: ['Dt 5010 Kt 5110', 'Dt 5110 Kt 5010', 'Dt 5210 Kt 5010', 'Dt 5010 Kt 6710'], points: 1 },
-            { id: 7, question: 'Kassa revizyasini kim o\'tkazadi?', options: ['Faqat kassir', 'Maxsus komissiya', 'Faqat direktor', 'Faqat bosh hisobchi'], points: 1 },
-            { id: 8, question: 'Kassadan ortiqcha pul topilsa, qaysi hisobga kiritiladi?', options: ['9410', '9510', '6710', '5710'], points: 1 },
-            { id: 9, question: 'Bank to\'lovi qaysi hujjat bilan rasmiylashtiriladi?', options: ['Kirim orderi', 'To\'lov topshirig\'i', 'Chiqim orderi', 'Faktura'], points: 1 },
-            { id: 10, question: 'Kassa kitobida xatolik topilsa, nima qilish kerak?', options: ['O\'chirib tashlash', 'Yangi sahifa ochish', 'Chizib, imzo qo\'yish', 'E\'tibor bermaslik'], points: 1 }
+            {
+                id: 1,
+                question: 'Kassada naqd pulning maksimal qoldig\'i qancha bo\'lishi mumkin?',
+                options: [
+                    'Cheklanmagan',
+                    'Bank tomonidan belgilangan limit',
+                    '5 million so\'m',
+                    '10 million so\'m'
+                ],
+                points: 1
+            },
+            {
+                id: 2,
+                question: 'Kassa kitobini kim yuritadi?',
+                options: [
+                    'Bosh hisobchi',
+                    'Kassir',
+                    'Direktor',
+                    'Nazoratchi'
+                ],
+                points: 1
+            },
+            {
+                id: 3,
+                question: 'Kassadan pul chiqimini qaysi hujjat bilan rasmiylashtiriladi?',
+                options: [
+                    'Kirim orderi',
+                    'Chiqim orderi',
+                    'Avans hisoboti',
+                    'Faktura'
+                ],
+                points: 1
+            },
+            {
+                id: 4,
+                question: 'Bank hisobvarag\'i qaysi hisob raqamida yuritiladi?',
+                options: [
+                    '5010',
+                    '5110',
+                    '5210',
+                    '5310'
+                ],
+                points: 1
+            },
+            {
+                id: 5,
+                question: 'Kassaga naqd pul qabul qilinganda qaysi hujjat tuziladi?',
+                options: [
+                    'Chiqim orderi',
+                    'Kirim orderi',
+                    'Kassa kitobchasi',
+                    'Avans hisoboti'
+                ],
+                points: 1
+            },
+            {
+                id: 6,
+                question: 'Bankka naqd pul topshirilganda qaysi provodka tuziladi?',
+                options: [
+                    'Dt 5010 Kt 5110',
+                    'Dt 5110 Kt 5010',
+                    'Dt 5210 Kt 5010',
+                    'Dt 5010 Kt 6710'
+                ],
+                points: 1
+            },
+            {
+                id: 7,
+                question: 'Kassa revizyasini kim o\'tkazadi?',
+                options: [
+                    'Faqat kassir',
+                    'Maxsus komissiya',
+                    'Faqat direktor',
+                    'Faqat bosh hisobchi'
+                ],
+                points: 1
+            },
+            {
+                id: 8,
+                question: 'Kassadan ortiqcha pul topilsa, qaysi hisobga kiritiladi?',
+                options: [
+                    '9410',
+                    '9510',
+                    '6710',
+                    '5710'
+                ],
+                points: 1
+            },
+            {
+                id: 9,
+                question: 'Bank to\'lovi qaysi hujjat bilan rasmiylashtiriladi?',
+                options: [
+                    'Kirim orderi',
+                    'To\'lov topshirig\'i',
+                    'Chiqim orderi',
+                    'Faktura'
+                ],
+                points: 1
+            },
+            {
+                id: 10,
+                question: 'Kassa kitobida xatolik topilsa, nima qilish kerak?',
+                options: [
+                    'O\'chirib tashlash',
+                    'Yangi sahifa ochish',
+                    'Chizib, imzo qo\'yish',
+                    'E\'tibor bermaslik'
+                ],
+                points: 1
+            }
         ],
         practical: [
-            { id: 1, question: 'Korxona bankdan 15,000,000 so\'m naqd pul oldi va kassaga qabul qildi. Ushbu operatsiya uchun buxgalteriya yozuvini tuzing.', points: 2 },
-            { id: 2, question: 'Xodimga ish haqi sifatida kassadan 3,500,000 so\'m to\'landi. Hisob-kitobni amalga oshiring.', points: 2 },
-            { id: 3, question: 'Kassadan ta\'minotchiga 8,200,000 so\'m to\'landi. Qanday provodka tuziladi?', points: 2 },
-            { id: 4, question: 'Korxona kassasiga xaridordan 12,000,000 so\'m tushdi. Buxgalteriya yozuvini yozing.', points: 2 },
-            { id: 5, question: 'Kassa revizyasi natijasida 50,000 so\'m ortiqcha pul topildi. Qanday qayd etiladi?', points: 2 }
+            {
+                id: 1,
+                question: 'Korxona bankdan 15,000,000 so\'m naqd pul oldi va kassaga qabul qildi. Ushbu operatsiya uchun buxgalteriya yozuvini tuzing.',
+                points: 2
+            },
+            {
+                id: 2,
+                question: 'Xodimga ish haqi sifatida kassadan 3,500,000 so\'m to\'landi. Hisob-kitobni amalga oshiring.',
+                points: 2
+            },
+            {
+                id: 3,
+                question: 'Kassadan ta\'minotchiga 8,200,000 so\'m to\'landi. Qanday provodka tuziladi?',
+                points: 2
+            },
+            {
+                id: 4,
+                question: 'Korxona kassasiga xaridordan 12,000,000 so\'m tushdi. Buxgalteriya yozuvini yozing.',
+                points: 2
+            },
+            {
+                id: 5,
+                question: 'Kassa revizyasi natijasida 50,000 so\'m ortiqcha pul topildi. Qanday qayd etiladi?',
+                points: 2
+            }
         ],
         accounting: [
-            { id: 1, question: 'Bankdan kassaga 20,000,000 so\'m naqd pul olindi', points: 2 },
-            { id: 2, question: 'Kassadan xodimga avans sifatida 2,000,000 so\'m berildi', points: 2 },
-            { id: 3, question: 'Kassaga mahsulot sotishdan 5,500,000 so\'m tushdi', points: 2 },
-            { id: 4, question: 'Kassadan bankga 10,000,000 so\'m topshirildi', points: 2 },
-            { id: 5, question: 'Kassa kamomadi 100,000 so\'m kassir hisobiga qoplandi', points: 2 }
+            {
+                id: 1,
+                question: 'Bankdan kassaga 20,000,000 so\'m naqd pul olindi',
+                points: 2
+            },
+            {
+                id: 2,
+                question: 'Kassadan xodimga avans sifatida 2,000,000 so\'m berildi',
+                points: 2
+            },
+            {
+                id: 3,
+                question: 'Kassaga mahsulot sotishdan 5,500,000 so\'m tushdi',
+                points: 2
+            },
+            {
+                id: 4,
+                question: 'Kassadan bankga 10,000,000 so\'m topshirildi',
+                points: 2
+            },
+            {
+                id: 5,
+                question: 'Kassa kamomadi 100,000 so\'m kassir hisobiga qoplandi',
+                points: 2
+            }
         ]
     },
+
+    // ==================== ISH HAQI ====================
     'ish-haqi': {
         test: [
-            { id: 1, question: 'Ish haqi qaysi hisob raqamida aks ettiriladi?', options: ['6710', '6610', '6510', '6410'], points: 1 },
-            { id: 2, question: 'Ish haqidan ushlab qolinadigan asosiy soliq qaysi?', options: ['QQS', 'Daromad solig\'i', 'Mulk solig\'i', 'Yer solig\'i'], points: 1 },
-            { id: 3, question: 'Jismoniy shaxslarning daromad solig\'i stavkasi necha foiz?', options: ['10%', '12%', '15%', '20%'], points: 1 },
-            { id: 4, question: 'Ish haqiga hisoblangan INPS qaysi hisobda aks etadi?', options: ['6410', '6510', '6610', '6710'], points: 1 },
-            { id: 5, question: 'Kasallik varaqasi bo\'yicha to\'lov qayerdan amalga oshiriladi?', options: ['Korxona hisobidan', 'INPS hisobidan', 'Davlat byudjeti', 'Sug\'urta kompaniyasi'], points: 1 },
-            { id: 6, question: 'Ish haqi fondi qaysi xarajat hisobida aks etadi?', options: ['9010', '9110', '9210', '9410'], points: 1 },
-            { id: 7, question: 'Xodimga berilgan avans qaysi hisobda ko\'rsatiladi?', options: ['4010', '4210', '5610', '6710'], points: 1 },
-            { id: 8, question: 'Ish haqidan ushlab qolingan daromad solig\'i qaysi hisobda?', options: ['6410', '6510', '6610', '6710'], points: 1 },
-            { id: 9, question: 'Mehnat haqi hisob-kitob varaqasi nima deb ataladi?', options: ['Tabel', 'Vedomost', 'Nakladnaya', 'Akt'], points: 1 },
-            { id: 10, question: 'Ish haqi to\'lanmagan xodim qarzini qaysi hisob ko\'rsatadi?', options: ['6710', '6610', '6510', '5610'], points: 1 }
+            {
+                id: 1,
+                question: 'Ish haqi qaysi hisob raqamida aks ettiriladi?',
+                options: [
+                    '6710',
+                    '6610',
+                    '6510',
+                    '6410'
+                ],
+                points: 1
+            },
+            {
+                id: 2,
+                question: 'Ish haqidan ushlab qolinadigan asosiy soliq qaysi?',
+                options: [
+                    'QQS',
+                    'Daromad solig\'i',
+                    'Mulk solig\'i',
+                    'Yer solig\'i'
+                ],
+                points: 1
+            },
+            {
+                id: 3,
+                question: 'Jismoniy shaxslarning daromad solig\'i stavkasi necha foiz?',
+                options: [
+                    '10%',
+                    '12%',
+                    '15%',
+                    '20%'
+                ],
+                points: 1
+            },
+            {
+                id: 4,
+                question: 'Ish haqiga hisoblangan INPS qaysi hisobda aks etadi?',
+                options: [
+                    '6410',
+                    '6510',
+                    '6610',
+                    '6710'
+                ],
+                points: 1
+            },
+            {
+                id: 5,
+                question: 'Kasallik varaqasi bo\'yicha to\'lov qayerdan amalga oshiriladi?',
+                options: [
+                    'Korxona hisobidan',
+                    'INPS hisobidan',
+                    'Davlat byudjeti',
+                    'Sug\'urta kompaniyasi'
+                ],
+                points: 1
+            },
+            {
+                id: 6,
+                question: 'Ish haqi fondi qaysi xarajat hisobida aks etadi?',
+                options: [
+                    '9010',
+                    '9110',
+                    '9210',
+                    '9410'
+                ],
+                points: 1
+            },
+            {
+                id: 7,
+                question: 'Xodimga berilgan avans qaysi hisobda ko\'rsatiladi?',
+                options: [
+                    '4010',
+                    '4210',
+                    '5610',
+                    '6710'
+                ],
+                points: 1
+            },
+            {
+                id: 8,
+                question: 'Ish haqidan ushlab qolingan daromad solig\'i qaysi hisobda?',
+                options: [
+                    '6410',
+                    '6510',
+                    '6610',
+                    '6710'
+                ],
+                points: 1
+            },
+            {
+                id: 9,
+                question: 'Mehnat haqi hisob-kitob varaqasi nima deb ataladi?',
+                options: [
+                    'Tabel',
+                    'Vedomost',
+                    'Nakladnaya',
+                    'Akt'
+                ],
+                points: 1
+            },
+            {
+                id: 10,
+                question: 'Ish haqi to\'lanmagan xodim qarzini qaysi hisob ko\'rsatadi?',
+                options: [
+                    '6710',
+                    '6610',
+                    '6510',
+                    '5610'
+                ],
+                points: 1
+            }
         ],
         practical: [
-            { id: 1, question: 'Xodimning oylik ish haqi 5,000,000 so\'m. Daromad solig\'i (12%) va INPS (0.1%) ni hisoblab, qo\'lga beriladigan summani aniqlang.', points: 2 },
-            { id: 2, question: 'Ishlab chiqarish xodimlariga 25,000,000 so\'m ish haqi hisoblandi. Provodkani yozing.', points: 2 },
-            { id: 3, question: 'Xodimga avans sifatida 2,000,000 so\'m berildi. Oylik ish haqi 4,500,000 so\'m. Yakuniy to\'lovni hisoblang.', points: 2 },
-            { id: 4, question: 'Ish haqidan ushlab qolingan daromad solig\'i 3,600,000 so\'m byudjetga o\'tkazildi. Provodka?', points: 2 },
-            { id: 5, question: 'Kasallik varaqasi bo\'yicha xodimga 1,500,000 so\'m to\'landi. Buxgalteriya yozuvini tuzing.', points: 2 }
+            {
+                id: 1,
+                question: 'Xodimning oylik ish haqi 5,000,000 so\'m. Daromad solig\'i (12%) va INPS (0.1%) ni hisoblab, qo\'lga beriladigan summani aniqlang.',
+                points: 2
+            },
+            {
+                id: 2,
+                question: 'Ishlab chiqarish xodimlariga 25,000,000 so\'m ish haqi hisoblandi. Provodkani yozing.',
+                points: 2
+            },
+            {
+                id: 3,
+                question: 'Xodimga avans sifatida 2,000,000 so\'m berildi. Oylik ish haqi 4,500,000 so\'m. Yakuniy to\'lovni hisoblang.',
+                points: 2
+            },
+            {
+                id: 4,
+                question: 'Ish haqidan ushlab qolingan daromad solig\'i 3,600,000 so\'m byudjetga o\'tkazildi. Provodka?',
+                points: 2
+            },
+            {
+                id: 5,
+                question: 'Kasallik varaqasi bo\'yicha xodimga 1,500,000 so\'m to\'landi. Buxgalteriya yozuvini tuzing.',
+                points: 2
+            }
         ],
         accounting: [
-            { id: 1, question: 'Ishlab chiqarish xodimlariga ish haqi 30,000,000 so\'m hisoblandi', points: 2 },
-            { id: 2, question: 'Ish haqidan daromad solig\'i 3,600,000 so\'m ushlab qolindi', points: 2 },
-            { id: 3, question: 'Ish haqidan INPS 30,000 so\'m ushlab qolindi', points: 2 },
-            { id: 4, question: 'Xodimga kassadan ish haqi 4,200,000 so\'m to\'landi', points: 2 },
-            { id: 5, question: 'Daromad solig\'i 3,600,000 so\'m bankdan byudjetga o\'tkazildi', points: 2 }
+            {
+                id: 1,
+                question: 'Ishlab chiqarish xodimlariga ish haqi 30,000,000 so\'m hisoblandi',
+                points: 2
+            },
+            {
+                id: 2,
+                question: 'Ish haqidan daromad solig\'i 3,600,000 so\'m ushlab qolindi',
+                points: 2
+            },
+            {
+                id: 3,
+                question: 'Ish haqidan INPS 30,000 so\'m ushlab qolindi',
+                points: 2
+            },
+            {
+                id: 4,
+                question: 'Xodimga kassadan ish haqi 4,200,000 so\'m to\'landi',
+                points: 2
+            },
+            {
+                id: 5,
+                question: 'Daromad solig\'i 3,600,000 so\'m bankdan byudjetga o\'tkazildi',
+                points: 2
+            }
         ]
     },
+
+    // ==================== ASOSIY VOSITALAR ====================
     'asosiy-vositalar': {
         test: [
-            { id: 1, question: 'Asosiy vositalar qaysi hisob raqamida hisoblanadi?', options: ['0100', '0200', '0300', '0400'], points: 1 },
-            { id: 2, question: 'Asosiy vositalarning foydalanish muddati kamida necha yil?', options: ['6 oy', '1 yil', '2 yil', '3 yil'], points: 1 },
-            { id: 3, question: 'Asosiy vosita sotib olinganda QQS qaysi hisobda aks etadi?', options: ['4410', '4510', '6410', '6510'], points: 1 },
-            { id: 4, question: 'Asosiy vositani ishga tushirish qaysi hujjat bilan rasmiylashtiriladi?', options: ['Faktura', 'Akt', 'Nakladnaya', 'Dogovor'], points: 1 },
-            { id: 5, question: 'Asosiy vositaning dastlabki qiymati nimani o\'z ichiga oladi?', options: ['Faqat sotib olish narxi', 'Narx + yetkazib berish + o\'rnatish', 'Faqat yetkazib berish', 'Faqat o\'rnatish'], points: 1 },
-            { id: 6, question: 'Asosiy vositani bepul olish qaysi hisobdan aks ettiriladi?', options: ['9410', '9510', '6710', '8310'], points: 1 },
-            { id: 7, question: 'Asosiy vositani sotishdan foyda qaysi hisobda?', options: ['9110', '9210', '9310', '9410'], points: 1 },
-            { id: 8, question: 'Asosiy vositani ta\'mirlash xarajatlari qayerga kiritiladi?', options: ['Dastlabki qiymatga', 'Davr xarajatlariga', 'Eskirish summaga', 'Kapital qo\'yilmaga'], points: 1 },
-            { id: 9, question: 'Asosiy vositalar inventarizatsiyasi qachon o\'tkaziladi?', options: ['Har oy', 'Har chorak', 'Yiliga 1 marta', '3 yilda 1 marta'], points: 1 },
-            { id: 10, question: 'Yaroqsiz asosiy vosita qaysi hisob orqali hisobdan chiqariladi?', options: ['0100', '0120', '0130', '0200'], points: 1 }
+            {
+                id: 1,
+                question: 'Asosiy vositalar qaysi hisob raqamida hisoblanadi?',
+                options: [
+                    '0100',
+                    '0200',
+                    '0300',
+                    '0400'
+                ],
+                points: 1
+            },
+            {
+                id: 2,
+                question: 'Asosiy vositalarning foydalanish muddati kamida necha yil?',
+                options: [
+                    '6 oy',
+                    '1 yil',
+                    '2 yil',
+                    '3 yil'
+                ],
+                points: 1
+            },
+            {
+                id: 3,
+                question: 'Asosiy vosita sotib olinganda QQS qaysi hisobda aks etadi?',
+                options: [
+                    '4410',
+                    '4510',
+                    '6410',
+                    '6510'
+                ],
+                points: 1
+            },
+            {
+                id: 4,
+                question: 'Asosiy vositani ishga tushirish qaysi hujjat bilan rasmiylashtiriladi?',
+                options: [
+                    'Faktura',
+                    'Akt',
+                    'Nakladnaya',
+                    'Dogovor'
+                ],
+                points: 1
+            },
+            {
+                id: 5,
+                question: 'Asosiy vositaning dastlabki qiymati nimani o\'z ichiga oladi?',
+                options: [
+                    'Faqat sotib olish narxi',
+                    'Narx + yetkazib berish + o\'rnatish',
+                    'Faqat yetkazib berish',
+                    'Faqat o\'rnatish'
+                ],
+                points: 1
+            },
+            {
+                id: 6,
+                question: 'Asosiy vositani bepul olish qaysi hisobdan aks ettiriladi?',
+                options: [
+                    '9410',
+                    '9510',
+                    '6710',
+                    '8310'
+                ],
+                points: 1
+            },
+            {
+                id: 7,
+                question: 'Asosiy vositani sotishdan foyda qaysi hisobda?',
+                options: [
+                    '9110',
+                    '9210',
+                    '9310',
+                    '9410'
+                ],
+                points: 1
+            },
+            {
+                id: 8,
+                question: 'Asosiy vositani ta\'mirlash xarajatlari qayerga kiritiladi?',
+                options: [
+                    'Dastlabki qiymatga',
+                    'Davr xarajatlariga',
+                    'Eskirish summaga',
+                    'Kapital qo\'yilmaga'
+                ],
+                points: 1
+            },
+            {
+                id: 9,
+                question: 'Asosiy vositalar inventarizatsiyasi qachon o\'tkaziladi?',
+                options: [
+                    'Har oy',
+                    'Har chorak',
+                    'Yiliga 1 marta',
+                    '3 yilda 1 marta'
+                ],
+                points: 1
+            },
+            {
+                id: 10,
+                question: 'Yaroqsiz asosiy vosita qaysi hisob orqali hisobdan chiqariladi?',
+                options: [
+                    '0100',
+                    '0120',
+                    '0130',
+                    '0200'
+                ],
+                points: 1
+            }
         ],
         practical: [
-            { id: 1, question: 'Korxona stanok sotib oldi: narxi 50,000,000 so\'m, yetkazib berish 2,000,000 so\'m, o\'rnatish 1,500,000 so\'m. Dastlabki qiymatni hisoblang.', points: 2 },
-            { id: 2, question: 'Asosiy vosita (dastlabki qiymati 30,000,000 so\'m) ishga tushirildi. Provodkani yozing.', points: 2 },
-            { id: 3, question: 'Asosiy vosita 25,000,000 so\'mga sotildi. Uning qoldiq qiymati 20,000,000 so\'m. Foyda/zararni aniqlang.', points: 2 },
-            { id: 4, question: 'Bepul olingan asosiy vositaning bozor qiymati 15,000,000 so\'m. Qanday qayd etiladi?', points: 2 },
-            { id: 5, question: 'Asosiy vositani ta\'mirlash uchun 3,000,000 so\'m sarflandi. Provodka?', points: 2 }
+            {
+                id: 1,
+                question: 'Korxona stanok sotib oldi: narxi 50,000,000 so\'m, yetkazib berish 2,000,000 so\'m, o\'rnatish 1,500,000 so\'m. Dastlabki qiymatni hisoblang.',
+                points: 2
+            },
+            {
+                id: 2,
+                question: 'Asosiy vosita (dastlabki qiymati 30,000,000 so\'m) ishga tushirildi. Provodkani yozing.',
+                points: 2
+            },
+            {
+                id: 3,
+                question: 'Asosiy vosita 25,000,000 so\'mga sotildi. Uning qoldiq qiymati 20,000,000 so\'m. Foyda/zararni aniqlang.',
+                points: 2
+            },
+            {
+                id: 4,
+                question: 'Bepul olingan asosiy vositaning bozor qiymati 15,000,000 so\'m. Qanday qayd etiladi?',
+                points: 2
+            },
+            {
+                id: 5,
+                question: 'Asosiy vositani ta\'mirlash uchun 3,000,000 so\'m sarflandi. Provodka?',
+                points: 2
+            }
         ],
         accounting: [
-            { id: 1, question: 'Asosiy vosita sotib olindi: 40,000,000 so\'m (QQS 4,800,000 so\'m)', points: 2 },
-            { id: 2, question: 'Asosiy vosita ishga tushirildi: dastlabki qiymati 45,000,000 so\'m', points: 2 },
-            { id: 3, question: 'Asosiy vosita sotildi: qoldiq qiymati 20,000,000 so\'m', points: 2 },
-            { id: 4, question: 'Sotishdan tushum: 28,000,000 so\'m (QQS 3,360,000 so\'m)', points: 2 },
-            { id: 5, question: 'Asosiy vositani sotishdan foyda 4,640,000 so\'m aniqlandi', points: 2 }
+            {
+                id: 1,
+                question: 'Asosiy vosita sotib olindi: 40,000,000 so\'m (QQS 4,800,000 so\'m)',
+                points: 2
+            },
+            {
+                id: 2,
+                question: 'Asosiy vosita ishga tushirildi: dastlabki qiymati 45,000,000 so\'m',
+                points: 2
+            },
+            {
+                id: 3,
+                question: 'Asosiy vosita sotildi: qoldiq qiymati 20,000,000 so\'m',
+                points: 2
+            },
+            {
+                id: 4,
+                question: 'Sotishdan tushum: 28,000,000 so\'m (QQS 3,360,000 so\'m)',
+                points: 2
+            },
+            {
+                id: 5,
+                question: 'Asosiy vositani sotishdan foyda 4,640,000 so\'m aniqlandi',
+                points: 2
+            }
         ]
     },
+
+    // ==================== AV ESKIRISH ====================
     'av-eskirish': {
         test: [
-            { id: 1, question: 'Amortizatsiya qaysi hisob raqamida to\'planadi?', options: ['0200', '0210', '0220', '0230'], points: 1 },
-            { id: 2, question: 'Chiziqli amortizatsiya usulida oylik stavka qanday hisoblanadi?', options: ['Qiymat / muddat', 'Qiymat / muddat / 12', 'Qiymat * stavka', 'Qiymat - qoldiq'], points: 1 },
-            { id: 3, question: 'Amortizatsiya qachondan boshlab hisoblanadi?', options: ['Sotib olingan kundan', 'Ishga tushirilgan oydan keyin', 'Yil boshidan', 'Chorak boshidan'], points: 1 },
-            { id: 4, question: 'Amortizatsiya hisoblash uchun minimal qiymat chegarasi?', options: ['Cheklanmagan', '1,000,000 so\'m', '5,000,000 so\'m', '10,000,000 so\'m'], points: 1 },
-            { id: 5, question: 'Ishlab chiqarish asosiy vositalari amortizatsiyasi qaysi hisobga?', options: ['9010', '9110', '9210', '9410'], points: 1 },
-            { id: 6, question: 'Qoldiq qiymat qanday aniqlanadi?', options: ['Dastlabki qiymat - amortizatsiya', 'Dastlabki qiymat + amortizatsiya', 'Dastlabki qiymat * stavka', 'Bozor qiymati'], points: 1 },
-            { id: 7, question: 'Tezlashtirilgan amortizatsiya qachon qo\'llaniladi?', options: ['Hech qachon', 'Texnologik jihatdan eskiradigan ob\'ektlarda', 'Barcha ob\'ektlarda', 'Faqat binolarda'], points: 1 },
-            { id: 8, question: 'Yer uchastkalariga amortizatsiya hisoblanadimi?', options: ['Ha', 'Yo\'q', 'Ba\'zan', 'Faqat shahar yerlariga'], points: 1 },
-            { id: 9, question: 'Amortizatsiya to\'xtatilgan asosiy vosita qayerda ko\'rsatiladi?', options: ['0100', '0110', '0120', '0130'], points: 1 },
-            { id: 10, question: 'To\'liq amortizatsiyalangan asosiy vosita hisobdan chiqariladimi?', options: ['Darhol chiqariladi', 'Foydalanilguncha hisobda qoladi', 'Yil oxirida chiqariladi', 'Direktor qaroriga ko\'ra'], points: 1 }
+            {
+                id: 1,
+                question: 'Amortizatsiya qaysi hisob raqamida to\'planadi?',
+                options: [
+                    '0200',
+                    '0210',
+                    '0220',
+                    '0230'
+                ],
+                points: 1
+            },
+            {
+                id: 2,
+                question: 'Chiziqli amortizatsiya usulida oylik stavka qanday hisoblanadi?',
+                options: [
+                    'Qiymat / muddat',
+                    'Qiymat / muddat / 12',
+                    'Qiymat * stavka',
+                    'Qiymat - qoldiq'
+                ],
+                points: 1
+            },
+            {
+                id: 3,
+                question: 'Amortizatsiya qachondan boshlab hisoblanadi?',
+                options: [
+                    'Sotib olingan kundan',
+                    'Ishga tushirilgan oydan keyin',
+                    'Yil boshidan',
+                    'Chorak boshidan'
+                ],
+                points: 1
+            },
+            {
+                id: 4,
+                question: 'Amortizatsiya hisoblash uchun minimal qiymat chegarasi?',
+                options: [
+                    'Cheklanmagan',
+                    '1,000,000 so\'m',
+                    '5,000,000 so\'m',
+                    '10,000,000 so\'m'
+                ],
+                points: 1
+            },
+            {
+                id: 5,
+                question: 'Ishlab chiqarish asosiy vositalari amortizatsiyasi qaysi hisobga?',
+                options: [
+                    '9010',
+                    '9110',
+                    '9210',
+                    '9410'
+                ],
+                points: 1
+            },
+            {
+                id: 6,
+                question: 'Qoldiq qiymat qanday aniqlanadi?',
+                options: [
+                    'Dastlabki qiymat - amortizatsiya',
+                    'Dastlabki qiymat + amortizatsiya',
+                    'Dastlabki qiymat * stavka',
+                    'Bozor qiymati'
+                ],
+                points: 1
+            },
+            {
+                id: 7,
+                question: 'Tezlashtirilgan amortizatsiya qachon qo\'llaniladi?',
+                options: [
+                    'Hech qachon',
+                    'Texnologik jihatdan eskiradigan ob\'ektlarda',
+                    'Barcha ob\'ektlarda',
+                    'Faqat binolarda'
+                ],
+                points: 1
+            },
+            {
+                id: 8,
+                question: 'Yer uchastkalariga amortizatsiya hisoblanadimi?',
+                options: [
+                    'Ha',
+                    'Yo\'q',
+                    'Ba\'zan',
+                    'Faqat shahar yerlariga'
+                ],
+                points: 1
+            },
+            {
+                id: 9,
+                question: 'Amortizatsiya to\'xtatilgan asosiy vosita qayerda ko\'rsatiladi?',
+                options: [
+                    '0100',
+                    '0110',
+                    '0120',
+                    '0130'
+                ],
+                points: 1
+            },
+            {
+                id: 10,
+                question: 'To\'liq amortizatsiyalangan asosiy vosita hisobdan chiqariladimi?',
+                options: [
+                    'Darhol chiqariladi',
+                    'Foydalanilguncha hisobda qoladi',
+                    'Yil oxirida chiqariladi',
+                    'Direktor qaroriga ko\'ra'
+                ],
+                points: 1
+            }
         ],
         practical: [
-            { id: 1, question: 'Asosiy vosita qiymati 24,000,000 so\'m, foydalanish muddati 5 yil. Chiziqli usulda oylik amortizatsiyani hisoblang.', points: 2 },
-            { id: 2, question: 'Ishlab chiqarish uskunasi uchun oylik amortizatsiya 500,000 so\'m hisoblandi. Provodka?', points: 2 },
-            { id: 3, question: 'Dastlabki qiymati 36,000,000 so\'m, to\'plangan amortizatsiya 12,000,000 so\'m. Qoldiq qiymatni aniqlang.', points: 2 },
-            { id: 4, question: 'Bino uchun yillik amortizatsiya 6,000,000 so\'m. Oylik amortizatsiya summasi?', points: 2 },
-            { id: 5, question: 'Savdo asosiy vositalari uchun oylik amortizatsiya 300,000 so\'m. Qaysi hisobga kiritiladi?', points: 2 }
+            {
+                id: 1,
+                question: 'Asosiy vosita qiymati 24,000,000 so\'m, foydalanish muddati 5 yil. Chiziqli usulda oylik amortizatsiyani hisoblang.',
+                points: 2
+            },
+            {
+                id: 2,
+                question: 'Ishlab chiqarish uskunasi uchun oylik amortizatsiya 500,000 so\'m hisoblandi. Provodka?',
+                points: 2
+            },
+            {
+                id: 3,
+                question: 'Dastlabki qiymati 36,000,000 so\'m, to\'plangan amortizatsiya 12,000,000 so\'m. Qoldiq qiymatni aniqlang.',
+                points: 2
+            },
+            {
+                id: 4,
+                question: 'Bino uchun yillik amortizatsiya 6,000,000 so\'m. Oylik amortizatsiya summasi?',
+                points: 2
+            },
+            {
+                id: 5,
+                question: 'Savdo asosiy vositalari uchun oylik amortizatsiya 300,000 so\'m. Qaysi hisobga kiritiladi?',
+                points: 2
+            }
         ],
         accounting: [
-            { id: 1, question: 'Ishlab chiqarish uskunasi uchun oylik amortizatsiya 800,000 so\'m', points: 2 },
-            { id: 2, question: 'Boshqaruv binosi uchun oylik amortizatsiya 1,200,000 so\'m', points: 2 },
-            { id: 3, question: 'Savdo zali jihozlari uchun oylik amortizatsiya 400,000 so\'m', points: 2 },
-            { id: 4, question: 'Transport vositalari uchun oylik amortizatsiya 600,000 so\'m', points: 2 },
-            { id: 5, question: 'Kompyuter texnikasi uchun oylik amortizatsiya 250,000 so\'m', points: 2 }
+            {
+                id: 1,
+                question: 'Ishlab chiqarish uskunasi uchun oylik amortizatsiya 800,000 so\'m',
+                points: 2
+            },
+            {
+                id: 2,
+                question: 'Boshqaruv binosi uchun oylik amortizatsiya 1,200,000 so\'m',
+                points: 2
+            },
+            {
+                id: 3,
+                question: 'Savdo zali jihozlari uchun oylik amortizatsiya 400,000 so\'m',
+                points: 2
+            },
+            {
+                id: 4,
+                question: 'Transport vositalari uchun oylik amortizatsiya 600,000 so\'m',
+                points: 2
+            },
+            {
+                id: 5,
+                question: 'Kompyuter texnikasi uchun oylik amortizatsiya 250,000 so\'m',
+                points: 2
+            }
         ]
     },
+
+    // ==================== KREDITORLAR ====================
     'kreditorlar': {
         test: [
-            { id: 1, question: 'Kreditorlik qarzlari qaysi hisob guruhida aks etadi?', options: ['4000', '5000', '6000', '7000'], points: 1 },
-            { id: 2, question: 'Ta\'minotchilarga qarz qaysi hisobda ko\'rsatiladi?', options: ['6010', '6110', '6210', '6310'], points: 1 },
-            { id: 3, question: 'Byudjet oldidagi qarz qaysi hisobda?', options: ['6310', '6410', '6510', '6610'], points: 1 },
-            { id: 4, question: 'Xodimlarga ish haqi bo\'yicha qarz qaysi hisobda?', options: ['6610', '6710', '6810', '6910'], points: 1 },
-            { id: 5, question: 'Qisqa muddatli kredit qaysi hisobda aks etadi?', options: ['6610', '6710', '6810', '6910'], points: 1 },
-            { id: 6, question: 'Kreditorlik qarzining muddati o\'tganda nima qilinadi?', options: ['Hisobdan chiqariladi', 'Daromadga kiritiladi', 'Eskirgan qarzga o\'tkaziladi', 'Hech narsa'], points: 1 },
-            { id: 7, question: 'Ta\'minotchiga to\'lov qaysi provodka bilan?', options: ['Dt 6010 Kt 5110', 'Dt 5110 Kt 6010', 'Dt 6010 Kt 5010', 'Dt 5010 Kt 6010'], points: 1 },
-            { id: 8, question: 'Kredit olish qaysi hisobda aks etadi?', options: ['6810', '6910', '5110', '5010'], points: 1 },
-            { id: 9, question: 'Kreditorlik qarzini kamaytirish qaysi tomonda?', options: ['Debet', 'Kredit', 'Ikkalasida ham', 'Hech qayerda'], points: 1 },
-            { id: 10, question: 'Qarz muddati 3 yildan ortiq bo\'lsa, u qanday nomlanadi?', options: ['Qisqa muddatli', 'Uzoq muddatli', 'O\'rta muddatli', 'Eskirgan'], points: 1 }
+            {
+                id: 1,
+                question: 'Kreditorlik qarzlari qaysi hisob guruhida aks etadi?',
+                options: [
+                    '4000',
+                    '5000',
+                    '6000',
+                    '7000'
+                ],
+                points: 1
+            },
+            {
+                id: 2,
+                question: 'Ta\'minotchilarga qarz qaysi hisobda ko\'rsatiladi?',
+                options: [
+                    '6010',
+                    '6110',
+                    '6210',
+                    '6310'
+                ],
+                points: 1
+            },
+            {
+                id: 3,
+                question: 'Byudjet oldidagi qarz qaysi hisobda?',
+                options: [
+                    '6310',
+                    '6410',
+                    '6510',
+                    '6610'
+                ],
+                points: 1
+            },
+            {
+                id: 4,
+                question: 'Xodimlarga ish haqi bo\'yicha qarz qaysi hisobda?',
+                options: [
+                    '6610',
+                    '6710',
+                    '6810',
+                    '6910'
+                ],
+                points: 1
+            },
+            {
+                id: 5,
+                question: 'Qisqa muddatli kredit qaysi hisobda aks etadi?',
+                options: [
+                    '6610',
+                    '6710',
+                    '6810',
+                    '6910'
+                ],
+                points: 1
+            },
+            {
+                id: 6,
+                question: 'Kreditorlik qarzining muddati o\'tganda nima qilinadi?',
+                options: [
+                    'Hisobdan chiqariladi',
+                    'Daromadga kiritiladi',
+                    'Eskirgan qarzga o\'tkaziladi',
+                    'Hech narsa'
+                ],
+                points: 1
+            },
+            {
+                id: 7,
+                question: 'Ta\'minotchiga avans to\'langanda qaysi hisob debetlanadi?',
+                options: [
+                    '6010',
+                    '6110',
+                    '4010',
+                    '4110'
+                ],
+                points: 1
+            },
+            {
+                id: 8,
+                question: 'Kreditorlik qarzini to\'lash muddati qancha?',
+                options: [
+                    '30 kun',
+                    '60 kun',
+                    'Shartnomaga ko\'ra',
+                    '1 yil'
+                ],
+                points: 1
+            },
+            {
+                id: 9,
+                question: 'Kreditorlik qarzini inventarizatsiya qilish majburiyatimi?',
+                options: [
+                    'Ha',
+                    'Yo\'q',
+                    'Ixtiyoriy',
+                    'Faqat yil oxirida'
+                ],
+                points: 1
+            },
+            {
+                id: 10,
+                question: 'Kredit foizlari qaysi hisobda aks etadi?',
+                options: [
+                    '9410',
+                    '9510',
+                    '9610',
+                    '9710'
+                ],
+                points: 1
+            }
         ],
         practical: [
-            { id: 1, question: 'Ta\'minotchidan 20,000,000 so\'m qarzga material olindi. Provodkani yozing.', points: 2 },
-            { id: 2, question: 'Ta\'minotchiga qarzni to\'lash uchun bankdan 15,000,000 so\'m o\'tkazildi. Buxgalteriya yozuvi?', points: 2 },
-            { id: 3, question: 'Byudjetga soliq to\'lash uchun 5,000,000 so\'m qarz hisoblandi. Provodka?', points: 2 },
-            { id: 4, question: 'Bankdan 50,000,000 so\'m kredit olindi. Qanday qayd etiladi?', points: 2 },
-            { id: 5, question: 'Kredit bo\'yicha foizlar 2,500,000 so\'m hisoblandi. Provodkani tuzing.', points: 2 }
+            {
+                id: 1,
+                question: 'Ta\'minotchidan 15,000,000 so\'mlik material keldi (QQS 1,800,000 so\'m). Hali to\'lanmagan. Provodka?',
+                points: 2
+            },
+            {
+                id: 2,
+                question: 'Ta\'minotchiga qarz 20,000,000 so\'m bankdan to\'landi. Buxgalteriya yozuvini tuzing.',
+                points: 2
+            },
+            {
+                id: 3,
+                question: 'Xodimlarga ish haqi 18,000,000 so\'m hisoblandi, lekin hali to\'lanmagan. Qanday qayd etiladi?',
+                points: 2
+            },
+            {
+                id: 4,
+                question: 'Byudjetga soliq 5,000,000 so\'m to\'landi. Provodka?',
+                points: 2
+            },
+            {
+                id: 5,
+                question: 'Bankdan 50,000,000 so\'m kredit olindi. Buxgalteriya yozuvini yozing.',
+                points: 2
+            }
         ],
         accounting: [
-            { id: 1, question: 'Ta\'minotchidan material olindi: 18,000,000 so\'m (QQS 2,160,000 so\'m)', points: 2 },
-            { id: 2, question: 'Ta\'minotchiga qarz to\'landi: bankdan 20,160,000 so\'m', points: 2 },
-            { id: 3, question: 'Byudjetga soliq 4,500,000 so\'m hisoblandi', points: 2 },
-            { id: 4, question: 'Bankdan kredit olindi: 50,000,000 so\'m', points: 2 },
-            { id: 5, question: 'Kredit foizlari 2,500,000 so\'m hisoblandi', points: 2 }
+            {
+                id: 1,
+                question: 'Ta\'minotchidan 25,000,000 so\'mlik tovar keldi (hali to\'lanmagan)',
+                points: 2
+            },
+            {
+                id: 2,
+                question: 'Ta\'minotchiga qarz 25,000,000 so\'m to\'landi',
+                points: 2
+            },
+            {
+                id: 3,
+                question: 'Xodimlarga ish haqi 12,000,000 so\'m hisoblandi',
+                points: 2
+            },
+            {
+                id: 4,
+                question: 'Byudjetga QQS 8,000,000 so\'m to\'landi',
+                points: 2
+            },
+            {
+                id: 5,
+                question: 'Bankdan qisqa muddatli kredit 30,000,000 so\'m olindi',
+                points: 2
+            }
         ]
     },
+
+    // ==================== MATERIALLAR ====================
     'materiallar': {
         test: [
-            { id: 1, question: 'Materiallar qaysi hisob raqamida hisoblanadi?', options: ['1000', '1010', '1020', '1030'], points: 1 },
-            { id: 2, question: 'Materiallarni qabul qilish qaysi hujjat bilan rasmiylashtiriladi?', options: ['Faktura', 'Nakladnaya', 'Akt', 'Dogovor'], points: 1 },
-            { id: 3, question: 'Materiallarni ishlab chiqarishga chiqarish qaysi hisobda?', options: ['2010', '2020', '2030', '2040'], points: 1 },
-            { id: 4, question: 'FIFO usuli nima?', options: ['Birinchi kirgan - birinchi chiqadi', 'Oxirgi kirgan - birinchi chiqadi', 'O\'rtacha qiymat', 'Aniq qiymat'], points: 1 },
-            { id: 5, question: 'Materiallar inventarizatsiyasi qachon o\'tkaziladi?', options: ['Har oy', 'Har chorak', 'Yiliga kamida 1 marta', 'Hech qachon'], points: 1 },
-            { id: 6, question: 'Material ortiqchasi topilsa, qaysi hisobga?', options: ['9410', '9510', '6710', '1010'], points: 1 },
-            { id: 7, question: 'Material kamomadi qaysi hisobda?', options: ['9410', '9510', '6710', '1010'], points: 1 },
-            { id: 8, question: 'Materiallarni sotib olishda QQS qaysi hisobda?', options: ['4410', '4510', '6410', '6510'], points: 1 },
-            { id: 9, question: 'Yaroqsiz materiallar qanday hisobdan chiqariladi?', options: ['1010 Kt', '1010 Dt', '2010 Dt', '9510 Dt'], points: 1 },
-            { id: 10, question: 'Material narxini hisoblashda qaysi usullar mavjud?', options: ['Faqat FIFO', 'Faqat LIFO', 'FIFO, LIFO, O\'rtacha', 'Faqat O\'rtacha'], points: 1 }
+            {
+                id: 1,
+                question: 'Materiallar qaysi hisob raqamida hisoblanadi?',
+                options: [
+                    '1010',
+                    '1020',
+                    '1030',
+                    '1040'
+                ],
+                points: 1
+            },
+            {
+                id: 2,
+                question: 'Materiallarning dastlabki qiymati nimani o\'z ichiga oladi?',
+                options: [
+                    'Faqat sotib olish narxi',
+                    'Narx + transport + bojxona',
+                    'Faqat transport',
+                    'Bozor narxi'
+                ],
+                points: 1
+            },
+            {
+                id: 3,
+                question: 'Materiallar ishlab chiqarishga berilganda qaysi hisob debetlanadi?',
+                options: [
+                    '2010',
+                    '8010',
+                    '9010',
+                    '1010'
+                ],
+                points: 1
+            },
+            {
+                id: 4,
+                question: 'Material qoldig\'ini baholash qaysi usul bilan amalga oshiriladi?',
+                options: [
+                    'Faqat FIFO',
+                    'FIFO, LIFO, o\'rtacha',
+                    'Faqat o\'rtacha',
+                    'Bozor narxi'
+                ],
+                points: 1
+            },
+            {
+                id: 5,
+                question: 'Materiallar inventarizatsiyasi qachon o\'tkaziladi?',
+                options: [
+                    'Har oy',
+                    'Har chorak',
+                    'Yiliga kamida 1 marta',
+                    'Hech qachon'
+                ],
+                points: 1
+            },
+            {
+                id: 6,
+                question: 'Ortiqcha material topilsa qaysi hisobga kiritiladi?',
+                options: [
+                    '9410',
+                    '9510',
+                    '6710',
+                    '1010'
+                ],
+                points: 1
+            },
+            {
+                id: 7,
+                question: 'Material kamomadi kim hisobiga qoplanadi?',
+                options: [
+                    'Korxona',
+                    'Aybdor shaxs',
+                    'Davlat',
+                    'Hech kim'
+                ],
+                points: 1
+            },
+            {
+                id: 8,
+                question: 'Yordamchi materiallar qaysi hisobda?',
+                options: [
+                    '1010',
+                    '1020',
+                    '1030',
+                    '1040'
+                ],
+                points: 1
+            },
+            {
+                id: 9,
+                question: 'Materiallarni sotishdan tushum qaysi hisobda?',
+                options: [
+                    '9010',
+                    '9110',
+                    '9410',
+                    '4610'
+                ],
+                points: 1
+            },
+            {
+                id: 10,
+                question: 'Material sotib olinganda QQS qaysi hisobda?',
+                options: [
+                    '4410',
+                    '4510',
+                    '6410',
+                    '6510'
+                ],
+                points: 1
+            }
         ],
         practical: [
-            { id: 1, question: 'Ta\'minotchidan 10,000,000 so\'m material sotib olindi (QQS 1,200,000 so\'m). Provodkani yozing.', points: 2 },
-            { id: 2, question: 'Ishlab chiqarishga 8,000,000 so\'m qiymatdagi material chiqarildi. Buxgalteriya yozuvi?', points: 2 },
-            { id: 3, question: 'Inventarizatsiya natijasida 500,000 so\'m material ortiqchasi topildi. Qanday qayd etiladi?', points: 2 },
-            { id: 4, question: 'Material kamomadi 300,000 so\'m mas\'ul shaxs hisobiga qoplandi. Provodka?', points: 2 },
-            { id: 5, question: 'Yaroqsiz material 200,000 so\'m qiymatda hisobdan chiqarildi. Buxgalteriya yozuvini tuzing.', points: 2 }
+            {
+                id: 1,
+                question: 'Korxona 10,000,000 so\'mlik material sotib oldi (QQS 1,200,000 so\'m). Provodkani yozing.',
+                points: 2
+            },
+            {
+                id: 2,
+                question: 'Ishlab chiqarishga 8,000,000 so\'mlik material berildi. Buxgalteriya yozuvini tuzing.',
+                points: 2
+            },
+            {
+                id: 3,
+                question: 'Material inventarizatsiyasida 500,000 so\'mlik ortiqcha topildi. Qanday qayd etiladi?',
+                points: 2
+            },
+            {
+                id: 4,
+                question: 'Material kamomadi 300,000 so\'m aybdor shaxs hisobiga qoplandi. Provodka?',
+                points: 2
+            },
+            {
+                id: 5,
+                question: 'Yaroqsiz material 200,000 so\'mga sotildi. Buxgalteriya yozuvini yozing.',
+                points: 2
+            }
         ],
         accounting: [
-            { id: 1, question: 'Material sotib olindi: 12,000,000 so\'m (QQS 1,440,000 so\'m)', points: 2 },
-            { id: 2, question: 'Ishlab chiqarishga material chiqarildi: 9,000,000 so\'m', points: 2 },
-            { id: 3, question: 'Material ortiqchasi topildi: 600,000 so\'m', points: 2 },
-            { id: 4, question: 'Material kamomadi mas\'ul shaxs hisobiga: 400,000 so\'m', points: 2 },
-            { id: 5, question: 'Yaroqsiz material hisobdan chiqarildi: 250,000 so\'m', points: 2 }
+            {
+                id: 1,
+                question: 'Material sotib olindi: 15,000,000 so\'m (QQS 1,800,000 so\'m)',
+                points: 2
+            },
+            {
+                id: 2,
+                question: 'Material omborga qabul qilindi: 15,000,000 so\'m',
+                points: 2
+            },
+            {
+                id: 3,
+                question: 'Ishlab chiqarishga material berildi: 12,000,000 so\'m',
+                points: 2
+            },
+            {
+                id: 4,
+                question: 'Material ortiqchasi topildi: 400,000 so\'m',
+                points: 2
+            },
+            {
+                id: 5,
+                question: 'Material kamomadi aybdor hisobiga qoplandi: 250,000 so\'m',
+                points: 2
+            }
         ]
     },
+
+    // ==================== DEBITORLAR ====================
     'debitorlar': {
         test: [
-            { id: 1, question: 'Debitorlik qarzlari qaysi hisob guruhida?', options: ['4000', '5000', '6000', '7000'], points: 1 },
-            { id: 2, question: 'Xaridorlar qarzini qaysi hisob ko\'rsatadi?', options: ['4010', '4110', '4210', '4310'], points: 1 },
-            { id: 3, question: 'Xodimlarga berilgan avans qaysi hisobda?', options: ['4010', '4210', '5610', '6710'], points: 1 },
-            { id: 4, question: 'Debitorlik qarzini oshirish qaysi tomonda?', options: ['Debet', 'Kredit', 'Ikkalasida ham', 'Hech qayerda'], points: 1 },
-            { id: 5, question: 'Eskirgan debitorlik qarzini qanday qayd etiladi?', options: ['Daromadga', 'Xarajatga', 'Hisobdan chiqarilmaydi', 'Kreditorlikka'], points: 1 },
-            { id: 6, question: 'Xaridordan to\'lov kelganda qaysi provodka?', options: ['Dt 5110 Kt 4010', 'Dt 4010 Kt 5110', 'Dt 5010 Kt 4010', 'Dt 4010 Kt 5010'], points: 1 },
-            { id: 7, question: 'Xodimga avans berilganda qaysi hisob Dt?', options: ['4210', '5010', '6710', '5110'], points: 1 },
-            { id: 8, question: 'Debitorlik qarzini kamaytirish qaysi tomonda?', options: ['Debet', 'Kredit', 'Ikkalasida ham', 'Hech qayerda'], points: 1 },
-            { id: 9, question: 'Shubhali qarzlar uchun zahira qaysi hisobda?', options: ['6910', '6810', '6710', '6610'], points: 1 },
-            { id: 10, question: 'Debitorlik qarzining muddati necha yil?', options: ['1 yil', '3 yil', '5 yil', 'Cheksiz'], points: 1 }
+            {
+                id: 1,
+                question: 'Debitorlik qarzlari qaysi hisob guruhida aks etadi?',
+                options: [
+                    '4000',
+                    '5000',
+                    '6000',
+                    '7000'
+                ],
+                points: 1
+            },
+            {
+                id: 2,
+                question: 'Xaridorlar qarzlari qaysi hisobda ko\'rsatiladi?',
+                options: [
+                    '4010',
+                    '4110',
+                    '4210',
+                    '4310'
+                ],
+                points: 1
+            },
+            {
+                id: 3,
+                question: 'Xodimlarga berilgan avans qaysi hisobda?',
+                options: [
+                    '4010',
+                    '4210',
+                    '5610',
+                    '6710'
+                ],
+                points: 1
+            },
+            {
+                id: 4,
+                question: 'Debitorlik qarzining muddati o\'tganda nima qilinadi?',
+                options: [
+                    'Hisobdan chiqariladi',
+                    'Xarajatga kiritiladi',
+                    'Eskirgan qarzga o\'tkaziladi',
+                    'Kutiladi'
+                ],
+                points: 1
+            },
+            {
+                id: 5,
+                question: 'Shubhali qarzlar uchun zahira qaysi hisobda?',
+                options: [
+                    '4210',
+                    '4220',
+                    '4230',
+                    '4240'
+                ],
+                points: 1
+            },
+            {
+                id: 6,
+                question: 'Xaridordan avans olinganda qaysi hisob kreditlanadi?',
+                options: [
+                    '4010',
+                    '5210',
+                    '6210',
+                    '4610'
+                ],
+                points: 1
+            },
+            {
+                id: 7,
+                question: 'Debitorlik qarzini inventarizatsiya qilish majburiyatimi?',
+                options: [
+                    'Ha',
+                    'Yo\'q',
+                    'Ixtiyoriy',
+                    'Faqat yil oxirida'
+                ],
+                points: 1
+            },
+            {
+                id: 8,
+                question: 'Xodim avansini qaytarish muddati qancha?',
+                options: [
+                    '3 kun',
+                    '7 kun',
+                    '30 kun',
+                    'Belgilanmagan'
+                ],
+                points: 1
+            },
+            {
+                id: 9,
+                question: 'Eskirgan qarz qaysi hisobga o\'tkaziladi?',
+                options: [
+                    '9410',
+                    '9510',
+                    '9610',
+                    '9710'
+                ],
+                points: 1
+            },
+            {
+                id: 10,
+                question: 'Debitorlik qarzini undirish uchun sud xarajatlari qayerga?',
+                options: [
+                    '9010',
+                    '9110',
+                    '9210',
+                    '9410'
+                ],
+                points: 1
+            }
         ],
         practical: [
-            { id: 1, question: 'Xaridorga mahsulot sotildi: 25,000,000 so\'m (QQS 3,000,000 so\'m). Provodkani yozing.', points: 2 },
-            { id: 2, question: 'Xaridordan to\'lov keldi: bankka 28,000,000 so\'m tushdi. Buxgalteriya yozuvi?', points: 2 },
-            { id: 3, question: 'Xodimga avans sifatida 3,000,000 so\'m berildi. Qanday qayd etiladi?', points: 2 },
-            { id: 4, question: 'Xodim avansni hisobga oldi: ish haqi 5,000,000 so\'m, avans 3,000,000 so\'m. Provodka?', points: 2 },
-            { id: 5, question: 'Eskirgan debitorlik qarzi 1,500,000 so\'m xarajatga kiritildi. Buxgalteriya yozuvini tuzing.', points: 2 }
+            {
+                id: 1,
+                question: 'Xaridorga 20,000,000 so\'mlik mahsulot sotildi (QQS 2,400,000 so\'m). Hali to\'lanmagan. Provodka?',
+                points: 2
+            },
+            {
+                id: 2,
+                question: 'Xaridordan qarz 25,000,000 so\'m bankka tushdi. Buxgalteriya yozuvini tuzing.',
+                points: 2
+            },
+            {
+                id: 3,
+                question: 'Xodimga xizmat safari uchun avans 3,000,000 so\'m berildi. Qanday qayd etiladi?',
+                points: 2
+            },
+            {
+                id: 4,
+                question: 'Xodim avans hisobotini topshirdi: sarflangan 2,800,000 so\'m. Qolgan pul qaytarildi. Provodka?',
+                points: 2
+            },
+            {
+                id: 5,
+                question: 'Eskirgan debitorlik qarzi 1,500,000 so\'m xarajatga kiritildi. Buxgalteriya yozuvini yozing.',
+                points: 2
+            }
         ],
         accounting: [
-            { id: 1, question: 'Xaridorga mahsulot sotildi: 30,000,000 so\'m (QQS 3,600,000 so\'m)', points: 2 },
-            { id: 2, question: 'Xaridordan to\'lov keldi: 33,600,000 so\'m', points: 2 },
-            { id: 3, question: 'Xodimga avans berildi: 2,500,000 so\'m', points: 2 },
-            { id: 4, question: 'Xodim avansni hisobga oldi: ish haqi 4,000,000 so\'m', points: 2 },
-            { id: 5, question: 'Eskirgan debitorlik qarzi xarajatga: 1,200,000 so\'m', points: 2 }
+            {
+                id: 1,
+                question: 'Xaridorga mahsulot sotildi: 30,000,000 so\'m (QQS 3,600,000 so\'m)',
+                points: 2
+            },
+            {
+                id: 2,
+                question: 'Xaridordan to\'lov bankka tushdi: 33,600,000 so\'m',
+                points: 2
+            },
+            {
+                id: 3,
+                question: 'Xodimga avans berildi: 2,500,000 so\'m',
+                points: 2
+            },
+            {
+                id: 4,
+                question: 'Xodim avans hisobotini topshirdi: 2,300,000 so\'m',
+                points: 2
+            },
+            {
+                id: 5,
+                question: 'Qolgan avans xodimdan qaytarildi: 200,000 so\'m',
+                points: 2
+            }
         ]
     }
 };
 
-// ==================== TIMER CLASS ====================
+
+// ===== timer.js =====
+// Timer utility functions
 class ExamTimer {
     constructor(durationMinutes, onTick, onComplete) {
-        this.duration = durationMinutes * 60;
+        this.duration = durationMinutes * 60; // Convert to seconds
         this.remaining = this.duration;
         this.onTick = onTick;
         this.onComplete = onComplete;
@@ -265,11 +1263,11 @@ class ExamTimer {
 
     start() {
         if (this.interval) return;
-
+        
         this.interval = setInterval(() => {
             if (!this.isPaused) {
                 this.remaining--;
-
+                
                 if (this.remaining <= 0) {
                     this.stop();
                     if (this.onComplete) this.onComplete();
@@ -306,8 +1304,11 @@ class ExamTimer {
     }
 }
 
-// ==================== STORAGE UTILITY ====================
+
+// ===== storage.js =====
+// Storage utility functions
 const Storage = {
+    // Save exam state
     saveExamState(topic, answers) {
         const state = {
             topic,
@@ -317,42 +1318,52 @@ const Storage = {
         localStorage.setItem('currentExam', JSON.stringify(state));
     },
 
+    // Get exam state
     getExamState() {
         const state = localStorage.getItem('currentExam');
         return state ? JSON.parse(state) : null;
     },
 
+    // Clear exam state
     clearExamState() {
         localStorage.removeItem('currentExam');
     },
 
-    saveCompletedExam(topic, answers, timeSpent) {
+    // Save completed exam
+    saveCompletedExam(topic, answers, timeSpent, studentInfo) {
         const exams = this.getCompletedExams();
         exams.push({
             topic,
             answers,
             timeSpent,
+            studentName: studentInfo?.name || '',
+            studentGroup: studentInfo?.group || '',
             completedAt: new Date().toISOString()
         });
         localStorage.setItem('completedExams', JSON.stringify(exams));
     },
 
+    // Get completed exams
     getCompletedExams() {
         const exams = localStorage.getItem('completedExams');
         return exams ? JSON.parse(exams) : [];
     },
 
+    // Check if topic already taken
     isTopicCompleted(topic) {
         const exams = this.getCompletedExams();
         return exams.some(exam => exam.topic === topic);
     },
 
+    // Get admin statistics
     getAdminStats() {
         const exams = this.getCompletedExams();
         return {
             totalExams: exams.length,
             exams: exams.map(exam => ({
                 topic: exam.topic,
+                studentName: exam.studentName || '',
+                studentGroup: exam.studentGroup || '',
                 completedAt: new Date(exam.completedAt).toLocaleString('uz-UZ'),
                 timeSpent: exam.timeSpent,
                 totalAnswers: Object.keys(exam.answers).length
@@ -360,20 +1371,26 @@ const Storage = {
         };
     },
 
+    // Save user info
     saveUserInfo(name, group) {
         localStorage.setItem('userInfo', JSON.stringify({ name, group }));
     },
 
+    // Get user info
     getUserInfo() {
         const info = localStorage.getItem('userInfo');
         return info ? JSON.parse(info) : null;
     }
 };
 
-// ==================== MAIN APPLICATION ====================
+
+// ===== app.js =====
+// Global state
 let currentTopic = null;
 let currentAnswers = {};
 let examTimer = null;
+let studentInfo = null;
+let pendingTopicId = null;
 
 // DOM Elements
 const homePage = document.getElementById('homePage');
@@ -390,6 +1407,9 @@ const submitBtn = document.getElementById('submitBtn');
 const adminBtn = document.getElementById('adminBtn');
 const adminPanel = document.getElementById('adminPanel');
 const adminContent = document.getElementById('adminContent');
+const studentModal = document.getElementById('studentModal');
+const studentForm = document.getElementById('studentForm');
+const cancelBtn = document.getElementById('cancelBtn');
 
 // Initialize app
 document.addEventListener('DOMContentLoaded', () => {
@@ -421,15 +1441,25 @@ function loadTopics() {
         `;
 
         if (!isCompleted) {
-            card.addEventListener('click', () => startExam(topic.id));
+            // Support both click and touch events
+            card.addEventListener('click', () => showStudentModal(topic.id));
             card.addEventListener('touchend', (e) => {
                 e.preventDefault();
-                startExam(topic.id);
+                showStudentModal(topic.id);
             });
         }
 
         topicsGrid.appendChild(card);
     });
+}
+
+// Show student info modal
+function showStudentModal(topicId) {
+    pendingTopicId = topicId;
+    studentModal.classList.add('active');
+    // Clear previous values
+    document.getElementById('studentName').value = '';
+    document.getElementById('studentGroup').value = '';
 }
 
 // Start exam
@@ -440,8 +1470,10 @@ function startExam(topicId) {
     const topic = examTopics.find(t => t.id === topicId);
     examTitle.textContent = topic.name;
 
+    // Load questions
     loadQuestions();
 
+    // Start timer (90 minutes)
     examTimer = new ExamTimer(
         90,
         (time) => {
@@ -454,6 +1486,7 @@ function startExam(topicId) {
     );
     examTimer.start();
 
+    // Show exam page
     showPage('exam');
 }
 
@@ -461,18 +1494,21 @@ function startExam(topicId) {
 function loadQuestions() {
     const topicQuestions = questions[currentTopic];
 
+    // Load test questions
     testQuestions.innerHTML = '';
     topicQuestions.test.forEach((q, index) => {
         const questionDiv = createTestQuestion(q, index);
         testQuestions.appendChild(questionDiv);
     });
 
+    // Load practical questions
     practicalQuestions.innerHTML = '';
     topicQuestions.practical.forEach((q, index) => {
         const questionDiv = createPracticalQuestion(q, index);
         practicalQuestions.appendChild(questionDiv);
     });
 
+    // Load accounting questions
     accountingQuestions.innerHTML = '';
     topicQuestions.accounting.forEach((q, index) => {
         const questionDiv = createAccountingQuestion(q, index);
@@ -566,7 +1602,10 @@ window.saveAnswer = function (type, questionId, answer) {
     }
     currentAnswers[type][questionId] = answer;
 
+    // Save to localStorage
     Storage.saveExamState(currentTopic, currentAnswers);
+
+    // Update progress
     updateProgress();
 };
 
@@ -580,13 +1619,16 @@ window.saveAccountingAnswer = function (questionId, field, value) {
     }
     currentAnswers.accounting[questionId][field] = value;
 
+    // Save to localStorage
     Storage.saveExamState(currentTopic, currentAnswers);
+
+    // Update progress
     updateProgress();
 };
 
 // Update progress bar
 function updateProgress() {
-    const totalQuestions = 20;
+    const totalQuestions = 20; // 10 test + 5 practical + 5 accounting
     const answeredCount =
         (currentAnswers.test ? Object.keys(currentAnswers.test).length : 0) +
         (currentAnswers.practical ? Object.keys(currentAnswers.practical).length : 0) +
@@ -602,14 +1644,28 @@ function submitExam() {
         examTimer.stop();
     }
 
+    // Calculate time spent
     const timeSpent = examTimer ? examTimer.getFormattedTime() : '00:00';
 
-    Storage.saveCompletedExam(currentTopic, currentAnswers, timeSpent);
+    // Save completed exam with student info
+    Storage.saveCompletedExam(currentTopic, currentAnswers, timeSpent, studentInfo);
     Storage.clearExamState();
 
+    // Show result
     const topic = examTopics.find(t => t.id === currentTopic);
     document.getElementById('completionTime').textContent = new Date().toLocaleString('uz-UZ');
     document.getElementById('resultTopic').textContent = topic.name;
+
+    // Display student info on result page
+    const resultInfo = document.querySelector('.result-info');
+    if (studentInfo) {
+        resultInfo.innerHTML = `
+            <p><strong>F.I.O.:</strong> ${studentInfo.name}</p>
+            <p><strong>Guruh:</strong> ${studentInfo.group}</p>
+            <p><strong>Yakunlangan vaqt:</strong> <span id="completionTime">${new Date().toLocaleString('uz-UZ')}</span></p>
+            <p><strong>Mavzu:</strong> <span id="resultTopic">${topic.name}</span></p>
+        `;
+    }
 
     showPage('result');
 }
@@ -623,6 +1679,8 @@ function checkExamState() {
             currentTopic = state.topic;
             currentAnswers = state.answers;
             startExam(currentTopic);
+
+            // Restore answers
             restoreAnswers();
         } else {
             Storage.clearExamState();
@@ -632,6 +1690,7 @@ function checkExamState() {
 
 // Restore answers
 function restoreAnswers() {
+    // Restore test answers
     if (currentAnswers.test) {
         Object.entries(currentAnswers.test).forEach(([questionId, answer]) => {
             const radio = document.querySelector(`input[name="test_${questionId - 1}"][value="${answer}"]`);
@@ -639,6 +1698,7 @@ function restoreAnswers() {
         });
     }
 
+    // Restore practical answers
     if (currentAnswers.practical) {
         Object.entries(currentAnswers.practical).forEach(([questionId, answer]) => {
             const textareas = practicalQuestions.querySelectorAll('textarea');
@@ -646,6 +1706,7 @@ function restoreAnswers() {
         });
     }
 
+    // Restore accounting answers
     if (currentAnswers.accounting) {
         Object.entries(currentAnswers.accounting).forEach(([questionId, answer]) => {
             const entries = accountingQuestions.querySelectorAll('.accounting-entry');
@@ -668,7 +1729,7 @@ function showPage(page) {
 
     if (page === 'home') {
         homePage.classList.add('active');
-        loadTopics();
+        loadTopics(); // Reload to show completed status
     } else if (page === 'exam') {
         examPage.classList.add('active');
     } else if (page === 'result') {
@@ -678,6 +1739,7 @@ function showPage(page) {
 
 // Setup event listeners
 function setupEventListeners() {
+    // Submit button
     submitBtn.addEventListener('click', () => {
         const confirm = window.confirm('Imtixonni yakunlashga ishonchingiz komilmi?');
         if (confirm) {
@@ -685,29 +1747,42 @@ function setupEventListeners() {
         }
     });
 
-    adminBtn.addEventListener('click', () => {
-        // Check if already authenticated
-        const isAuthenticated = sessionStorage.getItem('adminAuth') === 'true';
+    // Student form submit
+    studentForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const name = document.getElementById('studentName').value.trim();
+        const group = document.getElementById('studentGroup').value.trim();
 
-        if (!isAuthenticated) {
-            const password = prompt('🔒 Admin panelga kirish uchun parolni kiriting:');
-
-            // Admin password: chihota-6yastvie-9smaz
-            if (password === 'chihota-6yastvie-9smaz') {
-                sessionStorage.setItem('adminAuth', 'true');
-                adminPanel.classList.add('active');
-                loadAdminData();
-            } else if (password !== null) {
-                alert('❌ Noto\'g\'ri parol! Kirish rad etildi.');
-            }
-        } else {
-            adminPanel.classList.toggle('active');
-            if (adminPanel.classList.contains('active')) {
-                loadAdminData();
-            }
+        if (name && group) {
+            studentInfo = { name, group };
+            studentModal.classList.remove('active');
+            startExam(pendingTopicId);
         }
     });
 
+    // Cancel button
+    cancelBtn.addEventListener('click', () => {
+        studentModal.classList.remove('active');
+        pendingTopicId = null;
+    });
+
+    // Close modal when clicking outside
+    studentModal.addEventListener('click', (e) => {
+        if (e.target === studentModal) {
+            studentModal.classList.remove('active');
+            pendingTopicId = null;
+        }
+    });
+
+    // Admin button
+    adminBtn.addEventListener('click', () => {
+        adminPanel.classList.toggle('active');
+        if (adminPanel.classList.contains('active')) {
+            loadAdminData();
+        }
+    });
+
+    // Close admin panel when clicking outside
     document.addEventListener('click', (e) => {
         if (!adminPanel.contains(e.target) && e.target !== adminBtn) {
             adminPanel.classList.remove('active');
@@ -735,6 +1810,8 @@ function loadAdminData() {
             <div style="background: var(--light); padding: 1rem; border-radius: 8px; margin-bottom: 1rem;">
                 <strong>${index + 1}. ${exam.topic}</strong><br>
                 <small style="color: var(--gray);">
+                    ${exam.studentName ? `👤 ${exam.studentName}<br>` : ''}
+                    ${exam.studentGroup ? `📚 Guruh: ${exam.studentGroup}<br>` : ''}
                     📅 ${exam.completedAt}<br>
                     ⏱️ Qolgan vaqt: ${exam.timeSpent}<br>
                     ✍️ Javoblar: ${exam.totalAnswers} ta
@@ -753,3 +1830,4 @@ window.addEventListener('beforeunload', (e) => {
         e.returnValue = '';
     }
 });
+
